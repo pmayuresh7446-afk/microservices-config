@@ -19,13 +19,13 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @Value("${my.message}")
-    private String message;
-
-    @GetMapping("/message")
-    public String getMessage() {
-        return message;
-    }
+//    @Value("${my.message}")
+//    private String message;
+//
+//    @GetMapping("/message")
+//    public String getMessage() {
+//        return message;
+//    }
     @GetMapping
     public List<User> getAllUser(){
         return userService.getAllUser();
