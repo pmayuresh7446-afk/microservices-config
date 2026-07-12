@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: User-Service
+
+#  config:
+#    import: optional:configserver:http://localhost:8888
+  config:
+    import: optional:configserver:http://config-server-env-env.eba-ck6usjbn.eu-north-1.elasticbeanstalk.com
+#  datasource:
+#    url: jdbc:h2:mem:userdb
+#    driver-class-name: org.h2.Driver
+#    username: root
+#    password: root123
+#
+#  h2:
+#    console:
+#      enabled: true
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: create
+#
+#
+#
+#server:
+#  port: 8081
+#
+#eureka:
+#  instance:
+#    prefer-ip-address: true
+#    hostname: localhost
+#
+#  client:
+#    service-url:
+#      defaultZone: "http://localhost:8761/eureka"
